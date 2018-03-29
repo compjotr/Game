@@ -2,6 +2,8 @@ import { NgModule, ErrorHandler } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+
 //pages
 import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
@@ -24,6 +26,7 @@ import { AngularFireAuthModule } from "angularfire2/auth";
 import { AngularFirestoreModule } from "angularfire2/firestore";
 import { AngularFireDatabaseModule, AngularFireDatabase } from 'angularfire2/database';
 import * as firebase from 'firebase/app';
+import { Firebase } from '@ionic-native/firebase';
 
 
 
@@ -56,6 +59,8 @@ firebase.initializeApp(firebaseConfig)
     AngularFireDatabaseModule,
     AngularFirestoreModule.enablePersistence() ,
     AngularFireAuthModule,
+    HttpClientModule,
+
     
   ],
   bootstrap: [IonicApp],
@@ -74,7 +79,9 @@ firebase.initializeApp(firebaseConfig)
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     UserProvider,
     FCM,
-    FcmProvider
+    FcmProvider,
+    HttpClientModule,
+    Firebase
   ]
 })
 export class AppModule {}
