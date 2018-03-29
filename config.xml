@@ -86,4 +86,5 @@
     </plugin>
     <engine name="android" spec="~6.4.0" />
     <plugin name="cordova-plugin-fcm" spec="~2.1.2" />
+    <engine name="browser" spec="~4.1.0" />
 </widget>

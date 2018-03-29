@@ -16,13 +16,14 @@ import { FCM } from '@ionic-native/fcm';
 
 //providers
 import { UserProvider } from '../providers/user/user';
+import { FcmProvider } from '../providers/fcm/fcm';
 //firestore
 import { AngularFirestore, AngularFirestoreCollection,  } from 'angularfire2/firestore';
 import { AngularFireModule, } from "angularfire2";
 import { AngularFireAuthModule } from "angularfire2/auth";
 import { AngularFirestoreModule } from "angularfire2/firestore";
 import { AngularFireDatabaseModule, AngularFireDatabase } from 'angularfire2/database';
-import * as firebase from 'firebase/app'; // brings in app in typings
+import * as firebase from 'firebase/app';
 
 
 
@@ -72,7 +73,8 @@ firebase.initializeApp(firebaseConfig)
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     UserProvider,
-    FCM
+    FCM,
+    FcmProvider
   ]
 })
 export class AppModule {}
