@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>947395284555-mm7kaj75l2n4lv7fu8toqsov9bes4o6s.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.947395284555-mm7kaj75l2n4lv7fu8toqsov9bes4o6s</string>
+	<key>API_KEY</key>
+	<string>AIzaSyD7YcOPc4xTNToDXXF7RFi-wSzA7D_s_Ns</string>
+	<key>GCM_SENDER_ID</key>
+	<string>947395284555</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.pwh.push</string>
+	<key>PROJECT_ID</key>
+	<string>game-6c93f</string>
+	<key>STORAGE_BUCKET</key>
+	<string>game-6c93f.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false></false>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:947395284555:ios:89ce96813617ebfa</string>
+	<key>DATABASE_URL</key>
+	<string>https://game-6c93f.firebaseio.com</string>
+</dict>
+</plist>

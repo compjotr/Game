@@ -1,0 +1,37 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>games</ion-title>
+  </ion-navbar>
+
+</ion-header><br>
+<br>
+<br>
+<ion-card (click)= openFunction() >
+  
+    <ion-item>
+      <h2>{{this.gameName}}</h2>
+    </ion-item>
+    <ion-card-content>
+      <p>{{this.description}}</p>
+    </ion-card-content>
+    <ion-grid *ngIf="this.open">
+        <ion-row *ngFor='let user of userList'>
+          <ion-col>
+            <button ion-button (click) = challenge(user) color="secondary" round>
+              <ion-icon name="star"></ion-icon>
+              <div>Challenge {{user.username}}</div>
+            </button>
+            <ion-row *ngIf="user.gameOn">
+                <h2>{{user.username}} is game on! {{user.countDownTimer}} sec left </h2>
+              </ion-row>
+            
+          </ion-col>
+        </ion-row>
+        
+  </ion-grid>
+  </ion-card>
+  <div id="logOut">
+    <button (click)="signOutUser()" ion-button color="danger">Log Out</button>
+  </div>
